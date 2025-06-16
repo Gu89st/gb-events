@@ -14,13 +14,14 @@ function MNavbar() {
         setExpanded(false); 
     };
   return (
-    <Navbar expand="lg" variant="light" className=" position-absolute w-100 "  data-bs-theme="light" /*para las letras*/> {/* bg=dark es para el color de la barra y data-bd-theme para las letras */} 
+    <Navbar expand="lg" variant="light" className=" position-absolute w-100 mx auto"  data-bs-theme="light" /*para las letras*/> {/* bg=dark es para el color de la barra y data-bd-theme para las letras */} 
       <Container>
-        <Navbar.Brand as={Link} to="/Inicio">
+        <Navbar.Brand as={Link} to="/Inicio" className="img-fluid">
               <img src={Logo}
               alt="Cargando logo"
               width={120}
-              height={120}/>
+              height={120} 
+              />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav" >
